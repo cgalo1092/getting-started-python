@@ -21,6 +21,10 @@ def perform_healthcheck():
     # Perform health check verification work here. 
     return "Health check passed."
 
+@app.route('/healthcheck', methods=['GET'])
+def perform_healthcheck():
+    # Perform health check verification work here. 
+    return "Health check passed."
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
